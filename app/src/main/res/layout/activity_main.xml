@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/soru"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:text='"Ben bugün okula gideceğim"'
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="78dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="49dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text="Soru 1:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/soru"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/kel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:onClick="kaydir1"
+        android:text="Ben"
+        app:layout_constraintBaseline_toBaselineOf="@+id/kel4"
+        app:layout_constraintStart_toStartOf="@+id/kel2" />
+
+    <Button
+        android:id="@+id/kel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:onClick="kaydir4"
+        android:text="Gideceğim"
+        app:layout_constraintBottom_toTopOf="@+id/kel3"
+        app:layout_constraintEnd_toEndOf="@+id/kel3" />
+
+    <Button
+        android:id="@+id/kel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="51dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="18dp"
+        android:onClick="kaydir2"
+        android:text="bugün"
+        app:layout_constraintEnd_toStartOf="@+id/kel4"
+        app:layout_constraintStart_toStartOf="@+id/btnKontrol"
+        app:layout_constraintTop_toBottomOf="@+id/kel1" />
+
+    <Button
+        android:id="@+id/kel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:onClick="kaydir3"
+        android:text="okula"
+        app:layout_constraintBottom_toTopOf="@+id/btnKontrol"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnKontrol"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Kontrol Et"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
